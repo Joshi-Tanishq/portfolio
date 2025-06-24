@@ -288,6 +288,7 @@
   transition: all 0.3s ease;
   resize: none;
   min-height: 150px;
+  height: 100%;
 }
 
 .formTextarea:focus {
