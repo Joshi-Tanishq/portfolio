@@ -1,13 +1,25 @@
 /* Projects Section Styles */
 .projects {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: rgba(30, 41, 59, 0.3);
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 5rem 0;
+  }
 }
 
 .projectsContainer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+@media (min-width: 480px) {
+  .projectsContainer {
+    padding: 0 1.25rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -28,9 +40,15 @@
 }
 
 .projectsTitle {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .projectsTitle {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -54,53 +72,124 @@
 }
 
 .projectsDescription {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--gray-400);
   max-width: 768px;
   margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .projectsDescription {
+    font-size: 1.125rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .projectsDescription {
+    font-size: 1.25rem;
+  }
 }
 
 .filterTabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .filterTabs {
+    margin-bottom: 3rem;
+    padding: 0;
+  }
 }
 
 .tabsContainer {
   display: flex;
   background: rgba(30, 41, 59, 0.5);
   border-radius: 9999px;
-  padding: 0.5rem;
+  padding: 0.125rem;
   border: 1px solid var(--slate-700);
+  width: 115%;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: center;
+}
+
+.tabsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .tabsContainer {
+    width: 115%;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 640px) {
+  .tabsContainer {
+    padding: 0.25rem;
+    overflow-x: visible;
+    width: auto;
+    max-width: none;
+    justify-content: center;
+  }
 }
 
 .filterButton {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 9999px;
   transition: all 0.3s ease;
   font-weight: 500;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  min-width: fit-content;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .filterButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
 }
 
 .filterActive {
-  background: linear-gradient(to right, var(--purple-500), var(--pink-500));
-  color: var(--white);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, var(--purple-500), var(--pink-500)) !important;
+  color: var(--white) !important;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+  transform: scale(1.02);
 }
 
 .filterInactive {
   color: var(--gray-400);
+  background: transparent;
 }
 
 .filterInactive:hover {
   color: var(--white);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .projectsGrid {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .projectsGrid {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -130,7 +219,13 @@
 }
 
 .featuredCard {
-  grid-column: span 2;
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .featuredCard {
+    grid-column: span 2;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -141,9 +236,15 @@
 
 .projectImage {
   position: relative;
-  height: 16rem;
+  height: 12rem;
   background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
   overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .projectImage {
+    height: 16rem;
+  }
 }
 
 .imageGradient {

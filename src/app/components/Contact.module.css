@@ -1,13 +1,25 @@
 /* Contact Section Styles */
 .contact {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: rgba(15, 23, 42, 0.5);
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 5rem 0;
+  }
 }
 
 .contactContainer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+@media (min-width: 480px) {
+  .contactContainer {
+    padding: 0 1.25rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -28,9 +40,15 @@
 }
 
 .contactTitle {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .contactTitle {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -54,20 +72,41 @@
 }
 
 .contactDescription {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--gray-400);
   max-width: 768px;
   margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .contactDescription {
+    font-size: 1.125rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactDescription {
+    font-size: 1.25rem;
+  }
 }
 
 .contactContent {
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+@media (min-width: 480px) {
+  .contactContent {
+    gap: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .contactContent {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
   }
 }
 

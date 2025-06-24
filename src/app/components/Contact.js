@@ -47,7 +47,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -57,8 +57,8 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();      if (response.ok) {
-        showSnackbar('Thank you for your message! I\'ll get back to you soon.', 'success');
+      const data = await response.json(); if (response.ok) {
+        showSnackbar('Thank you for your message! I&apos;ll get back to you soon.', 'success');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         showSnackbar(`Error: ${data.error || 'Failed to send message'}`, 'error');
@@ -122,9 +122,8 @@ const Contact = () => {
               Get In Touch
             </span>
           </h2>
-          <div className={styles.gradientLine}></div>
-          <p className={styles.contactDescription}>
-            Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.
+          <div className={styles.gradientLine}></div>          <p className={styles.contactDescription}>
+            Ready to start your next project? Let&apos;s discuss how we can work together to bring your ideas to life.
           </p>
         </motion.div>
 
@@ -135,12 +134,11 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className={styles.contactInfo}
-          >
-            <div>
-              <h3 className={styles.infoTitle}>Let's Talk</h3>              <p className={styles.infoDescription}>
-                I'm always interested in new opportunities, challenging projects, and meaningful collaborations. 
-                Whether you're looking for a talented young developer, someone to build innovative AI-powered applications, 
-                or just want to chat about the latest technologies, I'd love to hear from you.
+          >            <div>
+              <h3 className={styles.infoTitle}>Let&apos;s Talk</h3>              <p className={styles.infoDescription}>
+                I&apos;m always interested in new opportunities, challenging projects, and meaningful collaborations.
+                Whether you&apos;re looking for a talented young developer, someone to build innovative AI-powered applications,
+                or just want to chat about the latest technologies, I&apos;d love to hear from you.
               </p>
             </div>
 

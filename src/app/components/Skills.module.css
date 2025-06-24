@@ -1,13 +1,25 @@
 /* Skills Section Styles */
 .skills {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: rgba(15, 23, 42, 0.5);
+}
+
+@media (min-width: 768px) {
+  .skills {
+    padding: 5rem 0;
+  }
 }
 
 .skillsContainer {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+@media (min-width: 480px) {
+  .skillsContainer {
+    padding: 0 1.25rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -24,13 +36,25 @@
 
 .skillsHeader {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .skillsHeader {
+    margin-bottom: 4rem;
+  }
 }
 
 .skillsTitle {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .skillsTitle {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -54,24 +78,56 @@
 }
 
 .skillsDescription {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--gray-400);
   max-width: 768px;
   margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .skillsDescription {
+    font-size: 1.125rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .skillsDescription {
+    font-size: 1.25rem;
+  }
 }
 
 .categoryTabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .categoryTabs {
+    margin-bottom: 3rem;
+    padding: 0;
+  }
 }
 
 .tabsContainer {
   display: flex;
   background: rgba(30, 41, 59, 0.5);
   border-radius: 9999px;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border: 1px solid var(--slate-700);
+  overflow-x: auto;
+  min-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .tabsContainer {
+    padding: 0.5rem;
+    overflow-x: visible;
+    min-width: auto;
+  }
 }
 
 .tabButton {
@@ -100,7 +156,14 @@
 
 .skillsGrid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .skillsGrid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
@@ -118,9 +181,15 @@
 .skillCard {
   background: rgba(30, 41, 59, 0.3);
   border-radius: 0.75rem;
-  padding: 1.5rem;
+  padding: 1rem;
   border: 1px solid rgba(71, 85, 105, 0.5);
   transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .skillCard {
+    padding: 1.5rem;
+  }
 }
 
 .skillCard:hover {

@@ -12,6 +12,16 @@ export const metadata = {
   keywords: "Full Stack Developer, Young Achiever, Next.js, React, AI Integration, OpenAI, AWS, Azure, DynamoDB, NextAuth",
   authors: [{ name: "Tanishq Joshi" }],
   creator: "Tanishq Joshi",
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
   openGraph: {
     title: "Tanishq Joshi - Full Stack Developer & Young Tech Achiever",
     description: "Passionate Full Stack Web Developer specializing in Next.js, AI integration, and modern cloud technologies.",

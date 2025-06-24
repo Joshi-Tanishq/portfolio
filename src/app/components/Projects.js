@@ -9,11 +9,11 @@ import styles from './Projects.module.css';
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.2 });
-  const [filter, setFilter] = useState('all');  const projects = [
+  const [filter, setFilter] = useState('all'); const projects = [
     {
       id: 1,
       title: 'Daanveda Platform',
-      description: 'Leading the development of Daanveda\'s comprehensive platform as Tech Lead. A full-stack application with AI integration, user management, and advanced analytics. Features modern UI/UX and scalable cloud architecture.',
+      description: 'Leading the development of Daanveda&apos;s comprehensive platform as Tech Lead. A full-stack application with AI integration, user management, and advanced analytics. Features modern UI/UX and scalable cloud architecture.',
       tech: ['Next.js', 'OpenAI API', 'NextAuth.js', 'Firestore', 'AWS', 'TypeScript'],
       category: 'fullstack',
       image: '/api/placeholder/600/400',
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Bhumi NGO Platform',
-      description: 'Developed the main platform for Bhumi NGO, one of India\'s largest volunteer-driven organizations. Features volunteer management, event coordination, and impact tracking with responsive design.',
+      description: 'Developed the main platform for Bhumi NGO, one of India&apos;s largest volunteer-driven organizations. Features volunteer management, event coordination, and impact tracking with responsive design.',
       tech: ['Next.js', 'React', 'TypeScript', 'Firebase', 'CSS3'],
       category: 'fullstack',
       image: '/api/placeholder/600/400',
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'EcoFest Platform',
-      description: 'Built the digital platform for Bhumi\'s EcoFest initiative, promoting environmental awareness. Features event management, participant registration, and real-time updates with engaging animations.',
+      description: 'Built the digital platform for Bhumi&apos;s EcoFest initiative, promoting environmental awareness. Features event management, participant registration, and real-time updates with engaging animations.',
       tech: ['Next.js', 'TypeScript', 'CSS3', 'Firebase', 'Web APIs'],
       category: 'frontend',
       image: '/api/placeholder/600/400',
@@ -96,8 +96,8 @@ const Projects = () => {
     { id: 'backend', label: 'Backend' }
   ];
 
-  const filteredProjects = filter === 'all' 
-    ? projects 
+  const filteredProjects = filter === 'all'
+    ? projects
     : projects.filter(project => project.category === filter);
   return (
     <section id="projects" className={styles.projects}>
@@ -114,9 +114,8 @@ const Projects = () => {
               Featured Projects
             </span>
           </h2>
-          <div className={styles.gradientLine}></div>
-          <p className={styles.projectsDescription}>
-            Showcasing some of my best work and the innovative solutions I've built
+          <div className={styles.gradientLine}></div>          <p className={styles.projectsDescription}>
+            Showcasing some of my best work and the innovative solutions I&apos;ve built
           </p>
         </motion.div>
 
@@ -132,9 +131,8 @@ const Projects = () => {
               <button
                 key={category.id}
                 onClick={() => setFilter(category.id)}
-                className={`${styles.filterButton} ${
-                  filter === category.id ? styles.filterActive : styles.filterInactive
-                }`}
+                className={`${styles.filterButton} ${filter === category.id ? styles.filterActive : styles.filterInactive
+                  }`}
               >
                 {category.label}
               </button>
@@ -145,9 +143,8 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              className={`${styles.projectCard} ${
-                project.featured ? styles.featuredCard : ''
-              }`}
+              className={`${styles.projectCard} ${project.featured ? styles.featuredCard : ''
+                }`}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
@@ -159,7 +156,7 @@ const Projects = () => {
                 <div className={styles.imagePlaceholder}>
                   <Code className="text-purple-400 opacity-50" size={80} />
                 </div>
-                  {/* Hover Overlay */}
+                {/* Hover Overlay */}
                 <div className={styles.hoverOverlay}>
                   <div className={styles.overlayButtons}>
                     <motion.a
@@ -203,7 +200,7 @@ const Projects = () => {
                     </span>
                   )}
                 </div>
-                
+
                 <p className={styles.projectDescription}>
                   {project.description}
                 </p>
@@ -265,9 +262,8 @@ const Projects = () => {
             href="#contact"
             className={styles.ctaButton}
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Let's Work Together
+            whileTap={{ scale: 0.95 }}          >
+            Let&apos;s Work Together
             <ExternalLink size={20} className={styles.ctaIcon} />
           </motion.a>
         </motion.div>

@@ -74,15 +74,13 @@ const About = () => {
             className={styles.textSection}
           >            <h3 className={styles.textTitle}>
               Full Stack Developer & Tech Lead at Daanveda
-            </h3>
-            <p className={styles.textParagraph}>
-              I'm Tanishq Joshi, a dedicated Full Stack Web Developer currently serving as Tech Lead at Daanveda Pvt Ltd. 
+            </h3>            <p className={styles.textParagraph}>
+              I&apos;m Tanishq Joshi, a dedicated Full Stack Web Developer currently serving as Tech Lead at Daanveda Pvt Ltd. 
               With 1.5 years of focused experience, I specialize in building innovative applications with AI integration, 
               automation solutions, and cloud technologies.
-            </p>
-            <p className={styles.textParagraph}>
+            </p>            <p className={styles.textParagraph}>
               My expertise spans frontend technologies like Next.js and React, along with cloud platforms including AWS and Azure. 
-              I'm passionate about integrating AI capabilities using OpenAI, working with NoSQL databases like Firestore, 
+              I&apos;m passionate about integrating AI capabilities using OpenAI, working with NoSQL databases like Firestore, 
               and creating automation solutions using Python and Selenium.
             </p>
             <p className={styles.textParagraph}>
@@ -115,7 +113,8 @@ const About = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          {stats.map(({ icon: Icon, value, label }, index) => (            <motion.div
+          {stats.map(({ icon: Icon, value, label }, index) => (            
+            <motion.div
               key={label}
               className={styles.statCard}
               whileHover={{ scale: 1.05, y: -5 }}
