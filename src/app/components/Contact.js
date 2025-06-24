@@ -293,7 +293,7 @@ const Contact = () => {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >          <p className={styles.footerText}>
-            © 2025 Tanishq Joshi. Built with Next.js and ❤️
+            © 2025 Tanishq Joshi. Built with Next.js
           </p>
         </motion.div>
       </div>
