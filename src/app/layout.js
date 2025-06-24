@@ -7,9 +7,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Tanishq Joshi - Full Stack Developer & Young Tech Achiever",
+  title: "Tanishq Joshi - Full Stack Developer & Tech Lead",
   description: "Passionate Full Stack Web Developer specializing in Next.js, AI integration, and cloud solutions. Building innovative applications with modern technologies like OpenAI, AWS, and Azure.",
-  keywords: "Full Stack Developer, Young Achiever, Next.js, React, AI Integration, OpenAI, AWS, Azure, DynamoDB, NextAuth",
+  keywords: "Full Stack Developer, Tech Lead, Next.js, React, AI Integration, OpenAI, AWS, Azure, DynamoDB, NextAuth",
   authors: [{ name: "Tanishq Joshi" }],
   creator: "Tanishq Joshi",
   icons: {
@@ -24,7 +24,7 @@ export const metadata = {
     userScalable: false,
   },
   openGraph: {
-    title: "Tanishq Joshi - Full Stack Developer & Young Tech Achiever",
+    title: "Tanishq Joshi - Full Stack Developer & Tech Lead",
     description: "Passionate Full Stack Web Developer specializing in Next.js, AI integration, and modern cloud technologies.",
     url: "https://tanishqjoshi.dev",
     siteName: "Tanishq Joshi Portfolio",
@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tanishq Joshi - Full Stack Developer & Young Tech Achiever",
+    title: "Tanishq Joshi - Full Stack Developer & Tech Lead",
     description: "Passionate Full Stack Web Developer specializing in Next.js, AI integration, and modern cloud technologies.",
   },
 };
