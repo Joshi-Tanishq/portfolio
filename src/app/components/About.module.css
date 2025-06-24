@@ -1,0 +1,227 @@
+/* About Section Styles */
+.about {
+  padding: 5rem 0;
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.aboutContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .aboutContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutContainer {
+    padding: 0 2rem;
+  }
+}
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .aboutTitle {
+    font-size: 3rem;
+  }
+}
+
+.titleGradient {
+  background: linear-gradient(to right, var(--purple-400), var(--pink-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientLine {
+  width: 6rem;
+  height: 4px;
+  background: linear-gradient(to right, var(--purple-400), var(--pink-400));
+  margin: 0 auto 2rem;
+}
+
+.aboutContent {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .aboutContent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.profileSection {
+  position: relative;
+}
+
+.profileContainer {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.profileOuter {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple-400), var(--pink-400));
+  padding: 4px;
+}
+
+.profileInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--slate-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileContent {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileInitials {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, var(--purple-400), var(--pink-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.floatingIcon {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatingIconPurple {
+  top: 2.5rem;
+  right: 2.5rem;
+  background: rgba(168, 85, 247, 0.2);
+  color: rgb(168, 85, 247);
+}
+
+.floatingIconPink {
+  bottom: 2.5rem;
+  left: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(236, 72, 153, 0.2);
+  color: rgb(236, 72, 153);
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.textTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.textParagraph {
+  font-size: 1.125rem;
+  color: var(--gray-300);
+  line-height: 1.7;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skillTag {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 9999px;
+  color: #c4b5fd;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.statCard {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(51, 65, 85, 0.3);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-5px);
+}
+
+.statIconContainer {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(168, 85, 247);
+}
+
+.statValue {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  color: var(--gray-400);
+  font-size: 0.875rem;
+}
