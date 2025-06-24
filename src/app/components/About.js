@@ -11,7 +11,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, threshold: 0.3 });  const stats = [
     { icon: Code, value: '1.5+', label: 'Years Experience' },
     { icon: Users, value: '25+', label: 'Projects Completed' },
-    { icon: Trophy, value: 'Tech Lead', label: 'at Daanveda' },
+    { icon: Trophy, value: 'Young', label: 'Tech Achiever' },
     { icon: Lightbulb, value: 'AI/Cloud', label: 'Specialist' },
   ];
 
@@ -73,18 +73,17 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className={styles.textSection}
           >            <h3 className={styles.textTitle}>
-              Full Stack Developer & Tech Lead at Daanveda
+              Full Stack Developer & Young Tech Achiever
             </h3>            <p className={styles.textParagraph}>
-              I&apos;m Tanishq Joshi, a dedicated Full Stack Web Developer currently serving as Tech Lead at Daanveda Pvt Ltd. 
-              With 1.5 years of focused experience, I specialize in building innovative applications with AI integration, 
-              automation solutions, and cloud technologies.
-            </p>            <p className={styles.textParagraph}>
+              I&apos;m Tanishq Joshi, a dedicated Full Stack Web Developer with a passion for innovative technology solutions. 
+              With 1.5 years of focused experience, I specialize in building cutting-edge applications with AI integration, 
+              automation solutions, and modern cloud technologies.
+            </p><p className={styles.textParagraph}>
               My expertise spans frontend technologies like Next.js and React, along with cloud platforms including AWS and Azure. 
               I&apos;m passionate about integrating AI capabilities using OpenAI, working with NoSQL databases like Firestore, 
               and creating automation solutions using Python and Selenium.
-            </p>
-            <p className={styles.textParagraph}>
-              As a Tech Lead, I focus on creating cutting-edge solutions that leverage the latest technologies, 
+            </p>            <p className={styles.textParagraph}>
+              As a young professional, I focus on creating cutting-edge solutions that leverage the latest technologies, 
               including web scraping automation, AI integration, and scalable cloud architectures to solve real-world problems.
             </p>
 

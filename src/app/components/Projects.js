@@ -9,16 +9,15 @@ import styles from './Projects.module.css';
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, threshold: 0.2 });
-  const [filter, setFilter] = useState('all'); const projects = [
-    {
+  const [filter, setFilter] = useState('all'); const projects = [    {
       id: 1,
-      title: 'Daanveda Platform',
-      description: 'Leading the development of Daanveda&apos;s comprehensive platform as Tech Lead. A full-stack application with AI integration, user management, and advanced analytics. Features modern UI/UX and scalable cloud architecture.',
+      title: 'AI-Powered Web Platform',
+      description: 'A comprehensive full-stack application with AI integration, user management, and advanced analytics. Features modern UI/UX, scalable cloud architecture, and real-time data processing.',
       tech: ['Next.js', 'OpenAI API', 'NextAuth.js', 'Firestore', 'AWS', 'TypeScript'],
       category: 'fullstack',
       image: '/api/placeholder/600/400',
-      liveUrl: 'https://app.daanveda.org/',
-      githubUrl: null, // NDA restricted
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Joshi-Tanishq',
       featured: true
     },
     {
@@ -64,27 +63,35 @@ const Projects = () => {
       liveUrl: 'https://zorogaming.netlify.app/',
       githubUrl: null, // Private project
       featured: false
-    },
-    {
+    },    {
       id: 6,
-      title: 'Daanveda Proposals',
-      description: 'Built a proposal management system for Daanveda with document generation, tracking, and collaboration features. Streamlines the proposal workflow with automated processes.',
+      title: 'Document Management System',
+      description: 'Built a comprehensive proposal management system with document generation, tracking, and collaboration features. Streamlines workflow processes with automated document handling.',
       tech: ['Next.js', 'TypeScript', 'Firestore', 'PDF Generation', 'NextAuth.js'],
       category: 'fullstack',
       image: '/api/placeholder/600/400',
-      liveUrl: 'https://proposal.daanveda.com/',
-      githubUrl: null, // NDA restricted
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Joshi-Tanishq',
       featured: false
-    },
-    {
+    },{
       id: 7,
       title: 'NGOverse Platform',
-      description: 'Developed NGOverse, a comprehensive platform connecting NGOs and volunteers. Features organization profiles, project management, and community building tools with modern design.',
-      tech: ['Next.js', 'TypeScript', 'Firestore', 'NextAuth.js', 'CSS3'],
+      description: 'Developed NGOverse, a comprehensive platform connecting NGOs and volunteers. Features organization profiles, project management, and community building tools with modern design.',      tech: ['Next.js', 'TypeScript', 'Firestore', 'NextAuth.js', 'CSS3'],
       category: 'fullstack',
       image: '/api/placeholder/600/400',
-      liveUrl: 'https://ngoverse.daanveda.com/',
-      githubUrl: null, // NDA restricted
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Joshi-Tanishq',
+      featured: true
+    },
+    {
+      id: 8,
+      title: 'Personal Portfolio',
+      description: 'My personal portfolio website showcasing my skills, projects, and experience. Built with modern web technologies featuring responsive design, smooth animations, and interactive elements.',
+      tech: ['Next.js', 'React', 'CSS3', 'Framer Motion', 'Lucide Icons'],
+      category: 'frontend',
+      image: '/api/placeholder/600/400',
+      liveUrl: 'https://tanishqjoshi-portfolio.netlify.app/',
+      githubUrl: null, // Current project
       featured: true
     }
   ];

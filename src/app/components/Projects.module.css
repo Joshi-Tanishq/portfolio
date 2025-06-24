@@ -14,6 +14,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 480px) {
@@ -98,6 +100,7 @@
   margin-bottom: 2rem;
   padding: 0 1rem;
   width: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -113,12 +116,13 @@
   border-radius: 9999px;
   padding: 0.125rem;
   border: 1px solid var(--slate-700);
-  width: 115%;
+  width: 100%;
   max-width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  justify-content: center;
+  justify-content: flex-start;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tabsContainer::-webkit-scrollbar {
@@ -127,8 +131,10 @@
 
 @media (min-width: 480px) {
   .tabsContainer {
-    width: 115%;
+    width: 100%;
     max-width: 500px;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -155,6 +161,13 @@
   flex-shrink: 0;
   min-width: fit-content;
   position: relative;
+}
+
+@media (max-width: 479px) {
+  .filterButton {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 640px) {

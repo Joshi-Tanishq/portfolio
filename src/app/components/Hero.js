@@ -72,8 +72,6 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >            <TypeAnimation
               sequence={[
-                'Tech Lead at Daanveda',
-                2000,
                 'Full Stack Web Developer',
                 2000,
                 'AI Integration Expert',
@@ -81,6 +79,8 @@ const Hero = () => {
                 'Python & Selenium Specialist',
                 2000,
                 'Cloud Solutions Expert',
+                2000,
+                'Young Tech Achiever',
                 2000,
               ]}
               wrapper="span"
@@ -92,8 +92,8 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}          >
-            Tech Lead at Daanveda specializing in AI integration, automation solutions, and cloud technologies. 
-            Building innovative applications with Next.js, Python, Selenium, Firestore, and web scraping automation.
+            Passionate Full Stack Web Developer specializing in AI integration, automation solutions, and cloud technologies. 
+            Building innovative applications with Next.js, Python, Selenium, Firestore, and modern web technologies.
           </motion.p>
 
           <motion.div

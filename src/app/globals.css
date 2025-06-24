@@ -29,6 +29,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +41,8 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* Touch improvements for mobile */
@@ -54,6 +58,8 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 480px) {
@@ -74,6 +80,34 @@ body {
   }
 }
 
+/* Mobile-specific responsive utilities */
+@media (max-width: 479px) {
+  .container, 
+  .navbarContainer, 
+  .heroContainer, 
+  .aboutContainer, 
+  .skillsContainer, 
+  .projectsContainer, 
+  .contactContainer {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .heading-1, .heroTitle {
+    font-size: 2rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  .heading-2, .aboutTitle, .skillsTitle, .projectsTitle, .contactTitle {
+    font-size: 1.75rem !important;
+  }
+  
+  .heroDescription, .aboutDescription, .skillsDescription {
+    font-size: 0.9rem !important;
+    padding: 0 0.25rem !important;
+  }
+}
+
 /* Layout */
 .section {
   padding: 3rem 0;
@@ -88,6 +122,8 @@ body {
 .main-gradient {
   background: linear-gradient(135deg, var(--slate-900) 0%, #6b46c1 50%, var(--slate-900) 100%);
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Text Utilities */
@@ -475,19 +511,26 @@ body {
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background: #1e293b;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #8b5cf6, #ec4899);
   border-radius: 4px;
+  min-height: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #7c3aed, #db2777);
+}
+
+::-webkit-scrollbar-corner {
+  background: #1e293b;
 }
 
 /* Text selection */
@@ -578,4 +621,35 @@ body {
   border-color: var(--purple-400);
   outline: none;
   box-shadow: 0 0 0 1px var(--purple-400);
+}
+
+/* Additional overflow prevention */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.w-full-safe {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Improve text readability on small screens */
+@media (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
 }

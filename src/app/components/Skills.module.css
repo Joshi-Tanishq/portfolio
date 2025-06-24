@@ -14,6 +14,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 480px) {
@@ -103,6 +105,8 @@
   justify-content: center;
   margin-bottom: 2rem;
   padding: 0 1rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -119,7 +123,15 @@
   padding: 0.25rem;
   border: 1px solid var(--slate-700);
   overflow-x: auto;
-  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabsContainer::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 640px) {
@@ -138,6 +150,15 @@
   background: none;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 479px) {
+  .tabButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
 }
 
 .tabActive {

@@ -21,6 +21,7 @@ export const metadata = {
     width: 'device-width',
     initialScale: 1,
     maximumScale: 1,
+    userScalable: false,
   },
   openGraph: {
     title: "Tanishq Joshi - Full Stack Developer & Young Tech Achiever",
@@ -39,7 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${inter.variable} font-sans overflow-x-hidden`}>
         {children}
       </body>
     </html>
